@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Juliet</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<meta name="description" content="A message for Juliet.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2712%27 fill=%27%237a2331%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="petals"></div>
+
+<div class="full" id="loader">
+  <p class="hand">One second, Juliet</p>
+  <h2>Putting something together for you<em>.</em></h2>
+  <div class="dotload"><i></i><i></i><i></i></div>
+</div>
+
+<div class="full gone" id="intro">
+  <div class="wrap">
+    <p class="hand">Hi Juliet,</p>
+    <h1>Before we begin, <em>pick a song.</em></h1>
+    <p class="muted">It will play quietly while you read. Tap one and it starts right away, and you can change it whenever you like.</p>
+    <ul class="songs" id="songs1"></ul>
+    <button class="btn solid" id="start" disabled>Start the journey</button>
+    <p style="margin-top:18px"><button class="link" id="skip">Continue without music</button></p>
+  </div>
+</div>
+
+<main id="main" style="display:none">
+  <section id="hero"><div class="wrap">
+    <p class="hand">For Juliet</p>
+    <h1>I made you <em>something.</em></h1>
+    <p class="muted">It took me a while to find the right words, and I am still not sure I found them. I wanted you to have them anyway.</p>
+    <div class="rule"></div>
+    <a class="btn" href="#noticed">Keep scrolling</a>
+  </div></section>
+
+  <section id="noticed"><div class="wrap">
+    <p class="hand rv">What I noticed first</p>
+    <h2 class="rv">A few things about you <em>that stayed with me</em></h2>
+    <div class="cards">
+      <div class="card rv"><h3>Your smile</h3><p>It changes the whole room. I catch myself smiling just because you are.</p></div>
+      <div class="card rv"><h3>Your confidence</h3><p>The way you walk in like you belong there. I love that about you.</p></div>
+      <div class="card rv"><h3>Your heart</h3><p>You care in a way people can feel, and it shows in the small things.</p></div>
+      <div class="card rv"><h3>Your energy</h3><p>Being around you makes everything feel brighter and a little lighter.</p></div>
+    </div>
+  </div></section>
+
+  <section id="confess"><div class="wrap">
+    <p class="hand rv">Confessions</p>
+    <h2 class="rv">A few things I should <em>probably admit</em></h2>
+    <p class="muted rv">Tap a card. They get a little braver on the other side.</p>
+    <div class="flips">
+      <button class="flip rv" aria-label="Flip card"><span class="inner"><span class="f front"><small>Honest question</small><b>Do you know what you do to me?</b></span><span class="f back">You walk into my thoughts without knocking, and you have made yourself very comfortable there.</span></span></button>
+      <button class="flip rv" aria-label="Flip card"><span class="inner"><span class="f front"><small>Fair warning</small><b>I might smile at my phone.</b></span><span class="f back">Every time your name shows up, I smile at it like it just said something sweet. Slightly embarrassing, completely true.</span></span></button>
+      <button class="flip rv" aria-label="Flip card"><span class="inner"><span class="f front"><small>Small confession</small><b>I have rehearsed this.</b></span><span class="f back">More than once, and never quite right. You make my best lines feel too small.</span></span></button>
+      <button class="flip rv" aria-label="Flip card"><span class="inner"><span class="f front"><small>Quick thought</small><b>You are hard to ignore.</b></span><span class="f back">I tried to stay casual about you. It lasted about as long as it took to see your smile.</span></span></button>
+      <button class="flip rv" aria-label="Flip card"><span class="inner"><span class="f front"><small>Be warned</small><b>I would lose an argument on purpose.</b></span><span class="f back">As long as I get to hear you laugh right after, I would call that a win.</span></span></button>
+      <button class="flip rv" aria-label="Flip card"><span class="inner"><span class="f front"><small>Just so you know</small><b>I notice everything.</b></span><span class="f back">Your smile, the way you carry yourself, the energy you bring into a room. I notice all of it, and I like all of it.</span></span></button>
+    </div>
+  </div></section>
+
+  <section id="said"><div class="wrap said">
+    <p class="hand rv" style="text-align:center">What I have been meaning to say</p>
+    <p class="seq">I don’t even know where to begin, because words honestly don’t feel enough to explain how I feel about you. From the moment I started getting to know you, there was something about you that stood out. Your smile, your confidence, your heart, and the way you make things feel so much brighter.</p>
+    <div class="orn"></div>
+    <p class="seq">I love the woman you are. I love your beautiful smile, your amazing energy, your personality, and the way you carry yourself. I would be lying if I said that I don’t love your curves, but you are beautiful inside and out, and I want you to always remember that.</p>
+    <div class="orn"></div>
+    <p class="seq">I don’t want to just admire you from a distance anymore. I want to be the person who makes you smile, supports you, listens to you, and reminds you every day how special you are. You make me calm, and your presence feels like home.</p>
+  </div></section>
+
+  <section id="notes"><div class="wrap">
+    <p class="hand rv">Small notes</p>
+    <h2 class="rv">Open them <em>when you need them</em></h2>
+    <div class="rv" style="margin-top:30px">
+      <button class="env"><small>Tap to open</small><b>Open when you doubt yourself</b><span class="body">You are beautiful, inside and out, and I mean both. On the days you can’t see it, I hope you remember that someone else does.</span></button>
+      <button class="env"><small>Tap to open</small><b>Open when your day is heavy</b><span class="body">You don’t have to be strong all the time. If you ever want someone to listen, I would like to be that person.</span></button>
+      <button class="env"><small>Tap to open</small><b>Open when you wonder how you make me feel</b><span class="body">Calm. That is the simplest way I can say it. Your presence feels like home.</span></button>
+    </div>
+  </div></section>
+
+  <section id="wish"><div class="wrap">
+    <p class="hand rv">What I would like</p>
+    <h2 class="rv">Not to admire you <em>from a distance</em></h2>
+    <ul class="wishes rv">
+      <li>To be the one who makes you smile</li>
+      <li>To support you, always</li>
+      <li>To listen when you need to be heard</li>
+      <li>To remind you, every day, how special you are</li>
+    </ul>
+  </div></section>
+
+  <section id="ask"><div class="wrap">
+    <p class="hand rv">So today, I have one simple question for you</p>
+    <div class="ask rv">Will you be my girlfriend?</div>
+    <p class="after rv">I’d love the chance to create beautiful memories with you, laugh with you, hold you when you’re emotional, grow with you, respect you, treat you like the jewel you are and show you the love and appreciation you deserve.</p>
+    <div class="choices rv">
+      <button class="btn solid" id="yes">Yes</button>
+      <button class="link" id="moment">I need a moment</button>
+    </div>
+    <p id="reply1"></p>
+  </div></section>
+  <footer>Made especially for you.</footer>
+</main>
+
+<div class="full gone" id="yes-screen">
+  <div class="wrap">
+    <p class="hand">Juliet,</p>
+    <h1>Thank you<em>.</em></h1>
+    <p>You have just made me the happiest person. I will look after this, and you, with care.</p>
+    <p class="muted">Take a screenshot of this page and send it to me. I want to see it with my own eyes.</p>
+    <div class="rule"></div>
+    <a class="btn" id="wa" href="#" style="display:none">Message me</a>
+  </div>
+</div>
+
+<div id="pop"><ul class="songs" id="songs2"></ul></div>
+<div id="np"><span class="eq"><i></i><i></i><i></i><i></i></span><span id="npt"></span><button id="chg">Change song</button><button id="mute">Mute</button></div>
+
+<audio id="bg" preload="none" playsinline></audio>
+<script src="js/main.js"></script>
+</body>
+</html>
